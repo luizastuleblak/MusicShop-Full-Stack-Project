@@ -1,0 +1,38 @@
+.topic {
+  font-style: italic;
+}
+
+.cart_box {
+  border: 1px solid #c8d6e5;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.input_count {
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.input_note {
+  width: 1280px;
+  height: 60px;
+}
+
+.button {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .topic {
+    display: none;
+  }
+}/*# sourceMappingURL=Cart.module.css.map */

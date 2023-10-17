@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model order {
+  id              String            @id
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime
+  name            String
+  surname         String
+  phone           String
+  email           String
+  address         String
+  price           Int
+  productonorders productonorders[]
+}
+
+model product {
+  id              String            @id
+  name            String
+  price           Int
+  images          String
+  content         String
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime
+  productonorders productonorders[]
+}
+
+model productonorders {
+  productId String
+  orderId   String
+  count     Int
+  note      String
+  order     order   @relation(fields: [orderId], references: [id], map: "ProductOnOrders_orderId_fkey")
+  product   product @relation(fields: [productId], references: [id], map: "ProductOnOrders_productId_fkey")
+
+  @@id([productId, orderId])
+  @@index([orderId], map: "ProductOnOrders_orderId_fkey")
+}

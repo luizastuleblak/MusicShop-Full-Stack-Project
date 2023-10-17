@@ -1,0 +1,1 @@
+.photo img{object-fit:cover;width:200px;height:200px;cursor:pointer;border-radius:50%}@media (max-width: 767px){.photo img{height:300px;width:300px}}@media (min-width: 768px) and (max-width: 991px){.photo img{height:500px;width:500px}}

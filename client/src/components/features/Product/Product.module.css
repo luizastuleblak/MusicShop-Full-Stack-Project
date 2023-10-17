@@ -1,0 +1,79 @@
+.image {
+  height: 500px;
+  width: 500px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.images {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.product_body {
+  position: relative;
+  background-color: #c8d6e5;
+  border-radius: 10%;
+}
+
+.price {
+  text-align: center;
+}
+
+.price_inner {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 10%;
+}
+
+.content {
+  font-size: 20px;
+  margin: 50px;
+  font-style: italic;
+}
+
+.button {
+  margin: 20px;
+}
+.button input {
+  padding-bottom: 5px;
+  margin-right: 10px;
+  width: 50px;
+}
+.button .note {
+  position: absolute;
+  right: 30px;
+  bottom: 140px;
+  width: 350px;
+}
+
+.active {
+  border-color: #f39c12;
+  cursor: default;
+}
+
+@media (max-width: 767px) {
+  .image {
+    width: 350px;
+    height: 350px;
+  }
+  .images {
+    margin-right: 30px;
+  }
+  .product_body {
+    margin-top: 15px;
+  }
+  .button .note {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .image {
+    width: 350px;
+    height: 350px;
+  }
+  .button .note {
+    width: 50px;
+    bottom: 100px;
+  }
+}/*# sourceMappingURL=Product.module.css.map */

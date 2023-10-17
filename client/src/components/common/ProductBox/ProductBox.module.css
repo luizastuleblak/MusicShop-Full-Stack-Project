@@ -1,0 +1,9 @@
+.image {
+  height: 350px;
+}
+
+@media (max-width: 767px) {
+  .product_box {
+    width: 400px;
+  }
+}/*# sourceMappingURL=ProductBox.module.css.map */

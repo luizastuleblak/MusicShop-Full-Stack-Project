@@ -1,0 +1,39 @@
+@import './../../../styles/settings.scss';
+
+.topic {
+	font-style: italic;
+}
+
+.cart_box {
+	border: 1px solid $color-one;
+}
+
+.image {
+	width: 100px;
+	height: 100px;
+	object-fit: scale-down;
+}
+
+.input_count {
+	width: 40px;
+	height: 40px;
+}
+
+.icon {
+	font-size: 35px;
+}
+
+.input_note {
+	width: 1280px;
+	height: 60px;
+}
+
+.button {
+	font-size: 20px;
+}
+
+@media (max-width: 767px) {
+	.topic {
+		display: none;
+	}
+}
