@@ -14,10 +14,10 @@ const Products = () => {
 
 	function fetchData() {
 		setLoading(true);
-		fetch(API_URL + '/products')
+		fetch(API_URL + '/product')
 			.then((res) => res.json())
-			.then((products) => {
-				dispatch(loadProducts(products));
+			.then((product) => {
+				dispatch(loadProducts(product));
 				setLoading(false);
 			});
 	}
