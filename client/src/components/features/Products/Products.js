@@ -14,7 +14,7 @@ const Products = () => {
 
 	function fetchData() {
 		setLoading(true);
-		fetch(API_URL + '/product')
+		fetch(API_URL + '/products')
 			.then((res) => res.json())
 			.then((products) => {
 				dispatch(loadProducts(products));
